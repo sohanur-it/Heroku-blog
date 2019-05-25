@@ -5,11 +5,11 @@ from .models import Post
 from django.contrib.auth.models import User
 
 
-def index(request):
-    context = {
-        'posts': Post.objects.all()
-    }
-    return render(request, 'blogs/index.html', context)
+# def index(request):
+#     context = {
+#         'posts': Post.objects.all()
+#     }
+#     return render(request, 'blogs/index.html', context)
 
 
 class PostListView(ListView):
